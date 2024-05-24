@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+    padding: 85px 0 0 0;
+}
+
+h1 {
+    color: #5cb85c;
+    text-align: center;
+}
+
+body>p {
+    text-align: justify;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 4px;
+}
+
+body>img {
+    width: 900px;
+    align-items: center;
+    align-content: center;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+td {
+    color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container2 {
+    max-width: 1000px;
+    align-items: center;
+    align-content: center;
+    margin: 50px auto;
+    background-color: #fff;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 15px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background: #4cae4c;
+}
