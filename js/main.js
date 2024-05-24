@@ -1,24 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Menampilkan pesan ketika tidak ada data
-    const tableBody = document.querySelector('table tbody');
-    if (tableBody.children.length === 0) {
-        const noDataRow = document.createElement('tr');
-        const noDataCell = document.createElement('td');
-        noDataCell.setAttribute('colspan', '4');
-        noDataCell.classList.add('text-center');
-        noDataCell.textContent = 'No records found';
-        noDataRow.appendChild(noDataCell);
-        tableBody.appendChild(noDataRow);
+    const btnHitung = document.getElementById("btn-hitung")
+
+    function hitungTotal(paket1, paket2, paket3, inputDurasi, inputOrang) {
+        let total = (paket1 + paket2 + paket3) * inputDurasi * inputOrang
+        return total
     }
 
-    // Konfirmasi sebelum logout
-    const logoutLink = document.querySelector('a[href="../logout.php"]');
-    if (logoutLink) {
-        logoutLink.addEventListener('click', function(event) {
-            const confirmation = confirm('Are you sure you want to logout?');
-            if (!confirmation) {
-                event.preventDefault();
-            }
-        });
-    }
+    btnHitung.addEventListener("click", function(){
+        const inputOrang = document.getElementById("jmlorg").value
+        const inputDurasi = document.getElementById("durasi").value
+        const cbPaket1 = document.getElementById("paket1").checked
+        const cbPaket2 = document.getElementById("paket2").checked
+        const cbPaket3 = document.getElementById("paket3").checked
+        const inputTotal = document.getElementById("total")
+
+        let paket1 = cbPaket1 ? 1000000 : 0
+        let paket2 = cbPaket2 ? 1200000 : 0
+        let paket3 = cbPaket3 ? 500000 : 0
+
+        console.log(hitungTotal(paket1, paket2, paket3, inputDurasi, inputOrang));
+
+        inputTotal.value = hitungTotal(paket1, paket2, paket3, inputDurasi, inputOrang)
+    })
+
 });

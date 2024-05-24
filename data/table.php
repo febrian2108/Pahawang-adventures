@@ -30,7 +30,7 @@ $conn->close();
 
 <head>
     <title>Table Pendaftaran</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/style2.css">
 </head>
 
@@ -57,16 +57,23 @@ $conn->close();
             </ul>
         </div>
     </nav>
-    <div class="container mt-5">
-        <h2 class="text-center">Table Pendaftaran</h2>
+    <div class="container-fluid">
+    <h2 class="text-center">Table Pendaftaran</h2>
         <div class="table-responsive">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover text-nowrap">
                 <thead class="thead-light">
                     <tr>
                         <th>ID</th>
                         <th>Nama</th>
                         <th>Email</th>
                         <th>Tanggal</th>
+                        <th>No.HP / TELP</th>
+                        <th>Jumlah Orang</th>
+                        <th>Durasi</th>
+                        <th>Penginapan</th>
+                        <th>Transportasi</th>
+                        <th>Makanan</th>
+                        <th>Total</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -74,17 +81,25 @@ $conn->close();
                     <?php
                     if (!empty($pendaftaran_data)) {
                         foreach ($pendaftaran_data as $row) {
-                            echo "<tr>
-                                <td>" . $row["id"] . "</td>
-                                <td>" . $row["nama"] . "</td>
-                                <td>" . $row["email"] . "</td>
-                                <td>" . $row["tanggal"] . "</td>
-                                <td>
-                                    <a href='update.php?id=" . $row["id"] . "' class='btn3 btn-primary btn-sm'>Update</a>
-                                    <a href='delete.php?id=" . $row["id"] . "' class='btn4 btn-danger btn-sm' onclick='return confirm(\"Kamu yakin ingin menghapus data ini?\");'>Hapus</a>
-                                </td>
-                            </tr>";
-                        }
+                    ?>
+                        <tr>
+                            <td><?= $row["id"] ?></td>
+                            <td><?= $row["nama"] ?></td>
+                            <td><?= $row["email"] ?></td>
+                            <td><?= $row["tanggal"] ?></td>
+                            <td><?= $row["notelp"] ?></td>
+                            <td><?= $row["jmlorg"] ?></td>
+                            <td><?= $row["durasi"] ?></td>
+                            <td class="text-center"><?= $row["paket1"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>"?></td>
+                            <td class="text-center"><?= $row["paket2"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>" ?></td>
+                            <td class="text-center"><?= $row["paket3"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>"    ?></td>
+                            <td>Rp <?= number_format($row["total"], 0, ',', '.') ?></td>
+                            <td>
+                                <a href='update.php?id=<?= $row["id"] ?>' class='btn3 btn-primary btn-sm mr-2'>Update</a>
+                                <a href='delete.php?id=<?= $row["id"] ?>' class='btn4 btn-danger btn-sm' onclick='return confirm("Kamu yakin ingin menghapus data ini?");'>Hapus</a>
+                            </td>
+                        </tr>
+                    <?php }
                     } else {
                         echo "<tr><td colspan='5' class='text-center'>No records found</td></tr>";
                     }

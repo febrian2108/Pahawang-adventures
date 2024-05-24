@@ -67,7 +67,7 @@ body>img {
     margin-top: 20px;
 }
 
-table {
+/* table {
     border-collapse: collapse;
     width: 80%;
     max-width: 800px;
@@ -76,7 +76,7 @@ table {
     text-align: left;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .table-responsive {
     margin-top: 20px;
@@ -97,35 +97,14 @@ td {
     color: #555;
 }
 
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.container2 {
-    max-width: 1000px;
-    align-items: center;
-    align-content: center;
-    margin: 50px auto;
-    background-color: #fff;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
-    margin: 50px auto;
-    border-radius: 8px;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* button .btnnn{
+    background: #1a72ca;
+} */
 
 input[type="text"],
 input[type="email"],
-input[type="date"] {
+input[type="date"],
+input[type="number"] {
     width: calc(100% - 22px);
     padding: 10px;
     margin: 10px 0;
@@ -133,28 +112,22 @@ input[type="date"] {
     border-radius: 4px;
 }
 
-button {
-    width: 100%;
+/* button {
     padding: 10px 15px;
-    background: #5cb85c;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 10px 0;
-}
+} */
 
-button:hover {
-    background: #4cae4c;
-}
-
-.btn {
+/* .btn {
     border: none;
     outline: none;
     padding: 10px 20px;
     background-color: #5cb85c;
     cursor: pointer;
-}
+} */
 
 .btn2{
     border: none;
@@ -180,7 +153,7 @@ button:hover {
     border-radius: 3px;
 }
 
-.active, .btn:hover {
+.active {
     background-color: #5cb85c;
     color: white;
 }
