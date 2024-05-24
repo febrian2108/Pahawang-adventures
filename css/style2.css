@@ -10,7 +10,6 @@ h2 {
     color: #333;
     margin-top: 20px;
     text-align: center;
-    padding: 85px 0 0 0;
 }
 
 h1 {
@@ -23,7 +22,6 @@ body>p {
 }
 
 p {
-    text-align: center;
     margin: 20px;
     font-size: 18px;
 }
@@ -80,6 +78,10 @@ table {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.table-responsive {
+    margin-top: 20px;
+}
+
 th,
 td {
     padding: 12px;
@@ -102,7 +104,6 @@ td {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .container2 {
