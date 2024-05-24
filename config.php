@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "pariwisata_lampung";
+$dbname = "pahawang-adventures";
 
 /* menginisialisasi variabel koneksi, membuat objek mysqli untuk menghubungkan ke database MySQL 
 "pariwisata_lampung" menggunakan server "localhost" dengan pengguna "root" tanpa kata sandi, dan 
