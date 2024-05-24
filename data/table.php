@@ -67,16 +67,26 @@ $conn->close();
                         <th>Nama</th>
                         <th>Email</th>
                         <th>Tanggal</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                     if (!empty($pendaftaran_data)) {
                         foreach ($pendaftaran_data as $row) {
-                            echo "<tr><td>" . $row["id"] . "</td><td>" . $row["nama"] . "</td><td>" . $row["email"] . "</td><td>" . $row["tanggal"] . "</td></tr>";
+                            echo "<tr>
+                                <td>" . $row["id"] . "</td>
+                                <td>" . $row["nama"] . "</td>
+                                <td>" . $row["email"] . "</td>
+                                <td>" . $row["tanggal"] . "</td>
+                                <td>
+                                    <a href='update.php?id=" . $row["id"] . "' class='btn btn-primary btn-sm'>Update</a>
+                                    <a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure you want to delete this item?\");'>Hapus</a>
+                                </td>
+                            </tr>";
                         }
                     } else {
-                        echo "<tr><td colspan='4' class='text-center'>No records found</td></tr>";
+                        echo "<tr><td colspan='5' class='text-center'>No records found</td></tr>";
                     }
                     ?>
                 </tbody>
