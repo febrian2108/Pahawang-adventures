@@ -1,0 +1,6 @@
+1.	Pindahkan file project ke htdocs kalian jika menggunakan XAMPP dan jika kalian menggunakan laragon letakkan di folder www kalian
+2.	Impor file database yang ada di folder data (data/pariwisata_lampung.sql) ke database Anda (mysql,sql)
+3.	jalankan project dengan mengetikan http://localhost/pariwisata_lampung/login.php
+4.	Untuk login anda bisa menggunakan akun yang sudah dibuat:
+    username: admin
+    password: admin123

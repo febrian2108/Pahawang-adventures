@@ -25,12 +25,13 @@ $conn->close();
 </head>
 
 <body>
-    <h2>Register</h2>
+    <h2>Registrasi</h2>
     <form method="post" action="">
         Username: <input type="text" name="username" required><br>
         Password: <input type="password" name="password" required><br>
         <button type="submit">Register</button>
     </form>
+    <p>Sudah punya akun? <a href="login.php">Login sekarang</a></p>
 </body>
 
 </html>

@@ -59,7 +59,7 @@ $conn->close();
                     <a class="nav-link" href="../paket-wisata.php">Paket Wisata</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Daftar Pesanan</a>
+                    <a class="nav-link" href="table.php">Daftar Pesanan</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../logout.php">Logout</a>

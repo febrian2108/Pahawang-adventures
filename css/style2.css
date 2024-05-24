@@ -147,3 +147,40 @@ button {
 button:hover {
     background: #4cae4c;
 }
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    cursor: pointer;
+}
+
+.btn2{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #343A40;
+    border-radius: 3px;
+}
+
+.btn3{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #1a72ca;
+    border-radius: 3px;
+}
+
+.btn4{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #e03939;
+    border-radius: 3px;
+}
+
+.active, .btn:hover {
+    background-color: #5cb85c;
+    color: white;
+}

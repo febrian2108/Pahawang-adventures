@@ -25,16 +25,16 @@ if (!isset($_SESSION['username'])) {
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link btn2 active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="paket-wisata.php">Paket Wisata</a>
+                    <a class="nav-link btn2" href="paket-wisata.php">Paket Wisata</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="data/table.php">Daftar Pesanan</a>
+                    <a class="nav-link btn2" href="data/table.php">Daftar Pesanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Logout</a>
+                    <a class="nav-link btn2" href="logout.php">Logout</a>
                 </li>
             </ul>
         </div>

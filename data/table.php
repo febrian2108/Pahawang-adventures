@@ -43,16 +43,16 @@ $conn->close();
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Home</a>
+                    <a class="nav-link btn2" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../paket-wisata.php">Paket Wisata</a>
+                    <a class="nav-link btn2" href="../paket-wisata.php">Paket Wisata</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Daftar Pesanan</a>
+                    <a class="nav-link btn2 active" href="#">Daftar Pesanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../logout.php">Logout</a>
+                    <a class="nav-link btn2" href="../logout.php">Logout</a>
                 </li>
             </ul>
         </div>
@@ -80,8 +80,8 @@ $conn->close();
                                 <td>" . $row["email"] . "</td>
                                 <td>" . $row["tanggal"] . "</td>
                                 <td>
-                                    <a href='update.php?id=" . $row["id"] . "' class='btn btn-primary btn-sm'>Update</a>
-                                    <a href='delete.php?id=" . $row["id"] . "' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure you want to delete this item?\");'>Hapus</a>
+                                    <a href='update.php?id=" . $row["id"] . "' class='btn3 btn-primary btn-sm'>Update</a>
+                                    <a href='delete.php?id=" . $row["id"] . "' class='btn4 btn-danger btn-sm' onclick='return confirm(\"Kamu yakin ingin menghapus data ini?\");'>Hapus</a>
                                 </td>
                             </tr>";
                         }
