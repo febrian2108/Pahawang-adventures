@@ -106,8 +106,8 @@ $conn->close();
                         <input type="text" name="total" id="total" class="form-control" required value="<?= $row['total'] ?>">
                     </div>
                     <div class="d-flex">
-                        <button type="button" id="btn-hitung" class="btn btn-success mr-2">Hitung</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" id="btn-hitung" class="btn btn-primary mr-2">Hitung</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
                 </form>
             </div>

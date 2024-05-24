@@ -63,18 +63,18 @@ $conn->close();
             <table class="table table-bordered table-hover text-nowrap">
                 <thead class="thead-light">
                     <tr>
-                        <th>ID</th>
-                        <th>Nama</th>
-                        <th>Email</th>
-                        <th>Tanggal</th>
-                        <th>No.HP / TELP</th>
-                        <th>Jumlah Orang</th>
-                        <th>Durasi</th>
-                        <th>Penginapan</th>
-                        <th>Transportasi</th>
-                        <th>Makanan</th>
-                        <th>Total</th>
-                        <th>Actions</th>
+                        <th >ID</th>
+                        <th style="text-align: center;">Nama</th>
+                        <th style="text-align: center;">Email</th>
+                        <th style="text-align: center;">Tanggal</th>
+                        <th style="text-align: center;">No.HP / TELP</th>
+                        <th style="text-align: center;">Jumlah Orang</th>
+                        <th style="text-align: center;">Durasi</th>
+                        <th style="text-align: center;">Penginapan</th>
+                        <th style="text-align: center;">Transportasi</th>
+                        <th style="text-align: center;">Makanan</th>
+                        <th style="text-align: center;">Total</th>
+                        <th style="text-align: center;">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -83,17 +83,17 @@ $conn->close();
                         foreach ($pendaftaran_data as $row) {
                     ?>
                         <tr>
-                            <td><?= $row["id"] ?></td>
-                            <td><?= $row["nama"] ?></td>
-                            <td><?= $row["email"] ?></td>
-                            <td><?= $row["tanggal"] ?></td>
-                            <td><?= $row["notelp"] ?></td>
-                            <td><?= $row["jmlorg"] ?></td>
-                            <td><?= $row["durasi"] ?></td>
+                            <td class="text-center"><?= $row["id"] ?></td>
+                            <td class="text-center"><?= $row["nama"] ?></td>
+                            <td class="text-center"><?= $row["email"] ?></td>
+                            <td class="text-center"><?= $row["tanggal"] ?></td>
+                            <td class="text-center"><?= $row["notelp"] ?></td>
+                            <td class="text-center"><?= $row["jmlorg"] ?></td>
+                            <td class="text-center"><?= $row["durasi"] ?></td>
                             <td class="text-center"><?= $row["paket1"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>"?></td>
                             <td class="text-center"><?= $row["paket2"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>" ?></td>
                             <td class="text-center"><?= $row["paket3"] == 1 ? "<span class='badge badge-success'>✓</span>" : "<span class='badge badge-danger'>X</span>"    ?></td>
-                            <td>Rp <?= number_format($row["total"], 0, ',', '.') ?></td>
+                            <td class="text-center">Rp <?= number_format($row["total"], 0, ',', '.') ?></td>
                             <td>
                                 <a href='update.php?id=<?= $row["id"] ?>' class='btn3 btn-primary btn-sm mr-2'>Update</a>
                                 <a href='delete.php?id=<?= $row["id"] ?>' class='btn4 btn-danger btn-sm' onclick='return confirm("Kamu yakin ingin menghapus data ini?");'>Hapus</a>
